@@ -219,7 +219,9 @@
 .navbar-default .navbar-nav li a {
   white-space: pre-wrap;
 }
-
+.navbar-default .navbar-nav li a {
+  white-space: nowrap;
+}
 .list-style-none li {
   list-style-type: none;
 }
