@@ -1,0 +1,248 @@
+.wizard {
+	margin: 20px auto;
+}
+
+.wizard .nav-tabs {
+	position: relative;
+	margin: 40px auto;
+	margin-bottom: 0;
+	border-bottom-color: #e0e0e0;
+}
+
+.wizard > div.wizard-inner {
+  position: relative;
+  background-color: #000;
+}
+
+.connecting-line {
+	height: 2px;
+	background: #e0e0e0;
+	position: absolute;
+	width: 80%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	z-index: 1;
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+	color: #555555;
+	cursor: default;
+	border: 0;
+	border-bottom-color: transparent;
+}
+
+span.round-tab {
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	display: inline-block;
+	border-radius: 100px;
+	background: #fff;
+	border: 2px solid #e0e0e0;
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	text-align: center;
+	font-size: 25px;
+}
+span.round-tab i{
+	color:#555555;
+}
+.wizard li.active span.round-tab {
+	background: #fff;
+	border: 2px solid #f53e7d;
+	
+}
+.wizard li.active span.round-tab i{
+	color: #f53e7d;
+}
+
+span.round-tab:hover {
+	color: #333;
+	border: 2px solid #333;
+}
+
+.wizard .nav-tabs > li {
+	width: 25%;
+}
+
+.wizard li:after {
+	content: " ";
+	position: absolute;
+	left: 46%;
+	opacity: 0;
+	margin: 0 auto;
+	bottom: 0px;
+	border: 5px solid transparent;
+	border-bottom-color: #f53e7d;
+	transition: 0.1s ease-in-out;
+}
+
+.wizard li.active:after {
+	content: " ";
+	position: absolute;
+	left: 46%;
+	opacity: 1;
+	margin: 0 auto;
+	bottom: 0px;
+	border: 10px solid transparent;
+	border-bottom-color: #f53e7d;
+}
+
+.wizard .nav-tabs > li a {
+	width: 70px;
+	height: 70px;
+	margin: 20px auto;
+	border-radius: 100%;
+	padding: 0;
+}
+
+	.wizard .nav-tabs > li a:hover {
+		background: transparent;
+	}
+
+.wizard .tab-pane {
+	position: relative;
+	padding-top: 50px;
+}
+
+.wizard h3 {
+	margin-top: 0;
+}
+
+.img-mailbox {
+  max-width: 300px;
+  padding: 4rem;
+  margin: auto;
+}
+.upload-container .item-upload {
+  max-width: 300px;
+  margin: auto;
+}
+.upload-container .upload-review {
+  padding: 2rem;
+  border: 1px dashed #1396d6;
+  background: rgba(19, 150, 214, 0.3);
+  display: flex;
+  flex-flow: column;
+  height: 400px;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+.upload-container .upload-review.is-success {
+  border: 1px dashed #48dfa4;
+  background: rgba(73, 223, 165, 0.3);
+}
+.upload-container .upload-review.is-fail {
+  border: 1px dashed #f53e7d;
+  background: rgba(245, 62, 125, 0.3);
+}
+.upload-container .upload-review input {
+  max-width: 100%;
+}
+.upload-container .upload-review img {
+  max-height: 90%;
+  max-width: 100%;
+}
+.upload-container .upload-review p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.upload-container .status-upload {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.upload-container .status-upload ul {
+  padding: 0;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.upload-container .status-upload ul li {
+  list-style-type: none;
+  font-weight: 400;
+}
+.upload-container .status-upload ul li i {
+  color: #1396d6;
+  padding-right: 1rem;
+}
+.upload-container .status-upload ul li.verify-success i {
+  color: #48dfa4;
+}
+.upload-container .status-upload ul li.verify-fail i {
+  color: #F44336;
+}
+
+.upload-container .text-rejection {
+  margin-top: 2rem;
+
+  font-weight: 400;
+  padding: 1.5rem;
+  border: 1px dashed rgba(255, 255, 255, 0.3)
+}
+.re-upload {
+  position: relative;
+}
+
+/* style input file */
+.upload-container .upload-review .form-group {
+	 padding: 1em;
+	 margin: 1em;
+}
+.upload-container .upload-review input[type=file] {
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.upload-container .upload-review .label {
+  width: 120px;
+  border: 2px dashed grey;
+  border-radius: 5px;
+  display: block;
+  padding: 1.2em;
+  transition: border 300ms ease;
+  cursor: pointer;
+  text-align: center;
+}
+.upload-container .upload-review .label i {
+  display: block;
+  font-size: 42px;
+  padding-bottom: 16px;
+}
+.upload-container .upload-review .label i, .upload-container .upload-review .label .title {
+  color: grey;
+  transition: 200ms color;
+}
+.upload-container .upload-review .label:hover {
+  border: 2px solid #fff;
+}
+.upload-container .upload-review .label:hover i, .upload-container .upload-review .label:hover .title {
+  color: #fff;
+}
+
+@media( max-width : 585px ) {
+	.wizard {
+		width: 90%;
+		height: auto !important;
+	}
+	span.round-tab {
+		font-size: 16px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.wizard .nav-tabs > li a {
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.wizard li.active:after {
+		content: " ";
+		position: absolute;
+		left: 35%;
+	}
+}
